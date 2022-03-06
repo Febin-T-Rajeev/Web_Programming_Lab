@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program 2</title>
+</head>
+<body>
+    
+    <h2>javascript Math Object</h2>
+    <p id="demo"></p>
+<script>
+    
+    document.getElementById("demo").innerHTML="<p><b>Math.E:</b>"+Math.E+"</p>"+
+                                              "<p><b>Math.PI:</b>"+Math.PI+"</p>"+
+                                              "<p><b>Math.SQRT2:</b>"+Math.SQRT2+"</p>"+
+                                              "<p><b>Math.SQRT1_2:</b>"+Math.SQRT1_2+"</p>"+
+                                              "<p><b>Math.LN2:</b>"+Math.LN2+"</p>"+
+                                              "<p><b>Math.LN10:</b>"+Math.LN10+"</p>"+
+                                              "<p><b>Math.LOG2E:</b>"+Math.LOG2E+"</p>"+
+                                              "<p><b>Math.LOG10E:</b>"+Math.LOG10E+"</p>";
+
+</script>
+
+    <h2>Javascript string properties</h2>
+    <p>The length property returnes the length of a string :</p>
+    <p id="HELLO"></p>
+
+    <p>The indexOf() method returns the position of the occurance of the specific text:</p>
+
+    <p id="LOC"></p>
+
+    <p>Both indexOf(), and lastindexOf() return -1 if the text is not found :</p>
+
+    <p id="LAST"></p>
+
+    <script>
+
+        
+        var str="please locate where 'locate' occurs!";
+        var pos=str.indexOf("John");
+
+        document.getElementById("LAST").innerHTML=pos;
+        
+        var txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var sin=txt.length;
+        document.getElementById('HELLO').innerHTML=sin;
+
+        var str="please locate where 'locate' occurs!";
+        var pos=str.indexOf('locate');
+        document.getElementById('LOC').innerHTML=pos;
+
+
+    </script>
+</body>
+</html>
